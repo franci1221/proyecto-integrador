@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    
+
+    <title>proyecto integrador</title>
+</head>
+<body>
+     <!-- AQUI EMPIEZA EL NAV  -->
+
+     <nav id="menu" class="px-8  bg-white fixed h-[70px] justify-between w-full flex items-center">
+               
+        <img class=" flex justify-start h-12 w-24" src="logo.png">
+        <div class=" font-bold flex-row justify-center mx-20  flex space-x-14  h-6  ">
+
+        <a href="#nosotros"><button class="h-6 w-24 font-bold">nosotros</button> </a>
+        <a href="#noticias"><button class="h-6 w-24 font-bold">noticias</button></a>
+        <a href="#ayuda"> <button class="h-6 w-24 font-bold">ayuda</button></a>
+        </div>
+        <div class="flex justify-end  ml-10 "> 
+             <button id="openModal" class="hero_cta rounded-full bg-violet-700 text-white h-6 w-24">ingresar</button>  
+                    
+        </div>
+     </nav>
+    <!-- HASTA AQUI EL NAV-->
+
+<!-- MODAL -->
+
+<section class="modal ">
+    <div class="modal_container">
+    <img src="./Materiales/imagen-modal.JPG" class="modal_img">
+    <div class="cuadros_modal">
+    <h2  class="modal_title">registrar</h2>
+    <div class="cuadro1_modal">
+    <img class="icono_modal" src="./Materiales/icono-maletin.png" alt="">
+    </div>
+    <div class="cuadro2_modal">
+    <img class="icono_modal" src="./Materiales/icono-persona.png" alt="">
+    </div>
+    </div>
+        <a href="#" class="modal_close">X</a>
+    </div>  
+</section>
+
+<!--FIN MODAL-->
+    <div class="pt-[80px] h-screen">
+
+    <header class=" bg-[url('./Materiales/manos.png')] bg-cover h-3/4 items-center flex flex-col md:flex-row justify-center px-4 min-h-[200px]">
+      <div class="flex justify-center items-center flex-col">
+        <h1 class= "text-3xl text-white font-bold" >¡Actúa para cambiar el mundo!</h1>
+            <p class=" text-white text-center hidden md:block"> fomentamos el vinculo entre empresas y organizaciones civiles para generar un<br/>
+                                                                impacto positivo en la sociedad.<br/>
+                                                                descubri diferentes maneras de involucrar tu organizacion con la sociedad</p>
+      </div>    
+      
+    </header>
+<!-- NOSOTROS -->
+    <div id="nosotros" class="bg-[#1C78FD] flex-row justify-center items-center bg-cover h-screen">
+    <div class="flex flex-row  mx-16">
+                <img class="mx-40 flex justify-start h-[180px] w-[350px] my-20" src="./Materiales/oficina.png" alt="oficina">
+                <div class="my-20">
+                <h1 class= "text-3xl text-white text-center font-bold my-10" >Soluciones para empresas</h1>
+                <p class=" text-white text-center hidden md:block"> Generamos un medio para que las empresas se involucren en<br/>
+                                                                        actividades de responsabilidad social.<br/>
+                                                                        ¡crea un grupo de voluntarios en tu organizacion y se parte del cambio! </p>
+                </div>
+        </div>
+        <div class="flex items-start flex-row justify-start  mx-20">
+                <div class="">
+                <h1 class= "text-3xl text-white text-center font-bold " >Soluciones para organizaciones</h1>
+                <p class="  text-white text-center hidden md:block"> apoyamos a las organizaciones sociales para que alcancen sus objetivos.<br/>
+                                                                        ponemos a su dispociscion una comunidad de voluntarios dispuestos a apoyarlos en sus necesidades<br/>
+                                                                        equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad</p>
+                </div>
+                <img class="flex mx-20 my-50 h-[180px] w-[350px]" src="./Materiales/voluntariado.jpg" alt="voluntariado"> 
+
+        </div>
+        </div>
+        <div class="bg-white flex-row justify-center items-center bg-cover h-4/5">
+        <div class="flex flex-col items-center   justify-center mx-16">
+            <h1 class= "text-3xl text-center font-bold" >encunetra las mejores oportunidades</h1>
+            <p class="   text-center my-10 hidden md:block"> la plataforma cuneta con gran variedadad de proyevtos locales (sociales,educativos y medioambientales)<br/>
+                                                        encontraras el que mejor se adapte a la experiencia que estas buscando.<br/>
+                                                         te ayudamos en la coordinacion con las organizaciones de forma simple y rapida</p>
+        </div>
+        <div  class="flex flex-row items-center justify-center mx-16">
+                <div class="box-content rounded mx-2 bg-[#DC3545] h-44 w-44 p-4  ">
+                    <div class="flex flex-row justify-between">
+                    <img class="flex h-[60px]" src="./Materiales/icono-mano.png">
+                    <img class="flex h-[20px]" src="./Materiales/icono-mas.png">
+                    </div>
+                  <h1 class="text-[25px] my-6  text-center text-white font-bold">Ser voluntario</h1>
+                </div>
+                <div class="box-content rounded mx-2 bg-[#FF9C07] h-44 w-44 p-4  ">
+                    <div class="flex flex-row justify-between">
+                    <img class="flex h-[60px]" src="./Materiales/icono-mano-corazon.png">
+                    <img class="flex h-[20px]" src="./Materiales/icono-mas.png">
+                    </div>
+                    <h1 class="text-[25px] my-6  text-center text-white font-bold">Donar</h1>
+                </div>
+                <div class="box-content rounded mx-2 bg-[#28A745] h-44 w-44 p-4  ">
+                    <div class="flex flex-row justify-between">
+                    <img class="flex h-[60px]" src="./Materiales/icono-reciclar.png">
+                    <img class="flex h-[20px]" src="./Materiales/icono-mas.png">
+                    </div>
+                    <h1 class="text-[25px] my-6  text-center text-white font-bold">reciclar</h1>
+                </div>
+                <div class="box-content rounded mx-2 bg-[#17A2B8] h-44 w-44 p-4  ">
+                    <div class="flex flex-row justify-between">
+                    <img class="flex h-[60px]" src="./Materiales/icono-maletin.png">
+                    <img class="flex h-[20px]" src="./Materiales/icono-mas.png">
+                    </div>
+                    <h1 class="text-[25px] my-6  text-center text-white font-bold">llamados <br/> laborales</h1>
+                </div>
+        </div>
+    </div>
+    <!--NOTICIAS-->
+    <div id="noticias" class="bg-[#1C78FD] flex flex-col justify-center items-center bg-cover h-screen">
+        <div class="flex flex-col">
+        <h1  class= "text-white text-3xl text-center  font-bold"> Noticias</h1>
+        <p class= "text-white text-center hidden md:block">ver todas</p>
+        </div>
+<div class="flex flex-row my-10">
+            <div class="box-content rounded mx-2 bg-white h-80 w-56">
+            <img class="rounded flex h-2/5 w-screen" src="./Materiales/pexels-anna-shvets-5029929.jpg">
+            <div class="flex flex-row justify-between">
+            <img class= "" src="./Materiales/icono-calendario.png" alt="">
+            <p> 10/08/2022 </p>
+            <img class="" src="./Materiales/icono-reloj.png">
+            <p>4 min</p>
+            </div>
+            <div class="flex justify-center">
+                <h1><a> voluntarios plantan <br/> arboles</a></h1>
+                <p></p>
+            </div>
+        </div>
+        <div class="box-content rounded mx-2 bg-white h-80 w-56">
+            <img class="rounded flex h-2/5 w-screen" src="./Materiales/pexels-lagos-food-bank-initiative-9090747.jpg">
+            <div class="flex flex-row justify-between">
+            <img class= "" src="./Materiales/icono-calendario.png" alt="">
+            <p> 10/08/2022 </p>
+            <img class="" src="./Materiales/icono-reloj.png">
+            <p>4 min</p>
+            </div>
+            <div class="flex justify-center">
+                <h1><a> voluntarios plantan <br/> arboles</a></h1>
+                <p></p>
+            </div>
+        </div>
+        <div class="box-content rounded mx-2 bg-white h-80 w-56">
+            <img class="rounded flex h-2/5 w-screen" src="./Materiales/pexels-rodnae-productions-6646923.jpg">
+            <div class="flex flex-row justify-between">
+            <img class= "" src="./Materiales/icono-calendario.png" alt="">
+            <p> 10/08/2022 </p>
+            <img class="" src="./Materiales/icono-reloj.png">
+            <p>4 min</p>
+            </div>
+            <div class="flex justify-center">
+                <h1><a> voluntarios plantan <br/> arboles</a></h1>
+                <p></p>
+            </div>
+        </div>
+        <div class="box-content rounded mx-2 bg-white h-80 w-56">
+            <img class="rounded flex h-2/5 w-screen" src="./Materiales/pexels-ron-lach-9035241 (1).jpg">
+            <div class="flex flex-row justify-between">
+            <img class= "" src="./Materiales/icono-calendario.png" alt="">
+            <p> 10/08/2022 </p>
+            <img class="" src="./Materiales/icono-reloj.png">
+            <p>4 min</p>
+            </div>
+            <div class="flex justify-center">
+                <h1><a> voluntarios plantan <br/> arboles</a></h1>
+                <p></p>
+            </div>
+        </div>
+</div>
+</div>
+<!--CONTACTO-->
+<div id="ayuda" class="flex justify-center flex-row h-4/5 bg-white ">
+    <div class=" flex  items-center">
+        <img class="flex  w-[400px] h-[180px]" src="./Materiales/laptop-escritorio.jpg">
+    </div>
+    <div class="flex mx-4 flex-col justify-center"> 
+        <div class="my-10 flex flex-row justify-center">
+    <h3 class=" flex text-3xl text-center font-bold">contacto</h3> 
+        </div>        
+    <div class="flex flex-row ">
+        <div class="flex flex-col">
+        <div class="flex flex-col">
+    <h3>Nombre</h3>
+    <input type="text" name="nombre" class="mt-1  px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md h-5">
+        </div>
+        <div class="flex flex-col">
+    <h3>email</h3>
+    <input type="email" name="email" class="mt-1  px-3 py-2 h-5 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md ">
+        </div>
+        </div>
+        <div class="flex mx-4 flex-col">
+    <h3>Mensaje</h3>
+    <input type="text" name="mensaje" class="mt-1 px-3 py-2 h-20 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md">
+        </div>
+     </div>       
+    <div class = "flex flex-row justify-center">
+    <button class="rounded-full my-5 bg-violet-700 text-white h-6 w-24">enviar</button>
+    </div>
+    </div>
+</div>
+    <footer class="bg-violet-700 h-[150px] w-100% ">
+    <div class="flex mx-16 my-10 flex-row">
+
+<img class=" h-12 my-8 w-24 " src="./Materiales/logo-blanco.png">
+<div class="flex flex-col my-8 mx-16  justify-center font-bold text-white">
+    <p>nosotros</p>
+    <p>contacto</p>
+    <p>noticias</p>
+    <p>terminos y condiciones</p>
+</div>
+
+    </div>
+    </footer>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
